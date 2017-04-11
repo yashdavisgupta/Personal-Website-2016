@@ -1,0 +1,147 @@
+.logo{
+  width: 70vw;
+}
+
+.vcenter {
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+.center {
+  display: table;
+  margin: 0 auto;
+}
+
+.no-scroll {
+    overflow:hidden;
+}
+
+.splash {
+  min-height: 90vh;
+}
+
+.bottom-banner{
+  min-height: 10vh;
+}
+
+.tabs .tab a {
+    color: rgba(0, 74, 83, 0.7);
+}
+
+.scrollspy .scrollspy a:hover, .scrollspy a.active {
+    color: #00bcd4;
+}
+
+.tabs .indicator {
+    background-color: #00bcd4;
+}
+
+footer.page-footer {
+    background-color: #00bcd4;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+#about #skills #projects{
+display: block;
+}
+
+.topmenu {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    background: white;
+    z-index: 2;
+}
+
+.resume{
+  width: 98vw;
+}
+
+.download-button {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.table-of-contents li {
+  padding: 2px 0;
+}
+
+.table-of-contents a {
+  display: inline-block;
+  font-weight: 300;
+  color: #a8a8a8;
+  margin-left: 19px;
+  padding-left: 2px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: .4;
+  display: inline-block;
+}
+
+.table-of-contents a:hover {
+  color: #a8a8a8;
+  margin-left: 19px;
+  padding-left: 2px;
+  border-left: 0px;
+  border-bottom: 2px solid #00bcd4;
+}
+
+.table-of-contents a.active {
+  font-weight: 500;
+  color: #00bcd4;
+  margin-left: 18px;
+  padding-left: 2px;
+  border-left: 0px;
+  border-bottom: 2px solid #00bcd4;
+}
