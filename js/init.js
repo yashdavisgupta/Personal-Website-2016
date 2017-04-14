@@ -23,7 +23,7 @@ $(document).ready(function(){
   var scrollOffset = 1;
 });
 
-$(document).scroll(function () {
+/*$(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > document.getElementById("nav").position.top && document.getElementById("nav").className != "center topmenu z-depth-5") {
         $("#navigation").appendTo("#nav-container-2");
@@ -32,10 +32,11 @@ $(document).scroll(function () {
         $("#navigation").appendTo("#nav-container");
         document.getElementById("nav").className = "center";
     }
-});
+});*/
 
 $(document).ready(function(){
   $('.materialboxed').materialbox();
+  $('.button-collapse').sideNav('hide');
 });
 
 // Initialize collapse button
@@ -50,10 +51,3 @@ $('.button-collapse').sideNav({
     draggable: true // Choose whether you can drag to open on touch screens
   }
 );
-
-// Show sideNav
-$('.button-collapse').sideNav('show');
-// Hide sideNav
-$('.button-collapse').sideNav('hide');
-// Destroy sideNav
-$('.button-collapse').sideNav('destroy');
