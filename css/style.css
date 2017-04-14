@@ -70,7 +70,7 @@ p {
 }
 
 .parallax-img {
-  width: 100vw;
+  max-width: 150vw;
 }
 
 @media only screen and (max-width : 600px) {
@@ -125,11 +125,12 @@ p {
 }
 
 .setup{
-  width: 50vw;
+  width: 100%;
+  padding: 0px !important;
 }
 
 .resume{
-  width: 98vw;
+  width: 85vw;
 }
 
 .download-button {
