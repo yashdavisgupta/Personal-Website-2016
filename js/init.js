@@ -19,24 +19,10 @@ $('.side-nav-inner').on('click', 'a', function(e){
 })
 
 $(document).ready(function(){
-  $('.scrollspy').scrollSpy();
-  var scrollOffset = 1;
-});
-
-/*$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > document.getElementById("nav").position.top && document.getElementById("nav").className != "center topmenu z-depth-5") {
-        $("#navigation").appendTo("#nav-container-2");
-        document.getElementById("nav").className += " topmenu z-depth-5";
-    } else {
-        $("#navigation").appendTo("#nav-container");
-        document.getElementById("nav").className = "center";
-    }
-});*/
-
-$(document).ready(function(){
   $('.materialboxed').materialbox();
   $('.button-collapse').sideNav('hide');
+  $('.scrollspy').scrollSpy();
+  var scrollOffset = 1;
 });
 
 // Initialize collapse button
@@ -51,3 +37,33 @@ $('.button-collapse').sideNav({
     draggable: true // Choose whether you can drag to open on touch screens
   }
 );
+$(window).scroll(function() {
+    var top_of_element = $("#skills").offset().top;
+    var bottom_of_element = $("#skills").offset().top + $("#skills").outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).height();
+    var top_of_screen = $(window).scrollTop();
+
+    if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+      jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },6000);
+      });
+    }
+    else {
+        // The element is not visible, do something else
+    }
+});
+
+$(document).ready(function(){
+  $('.slider').slider();
+});
+
+$('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'masonry',
+});
+
+$("img.lazy").lazyload({
+    threshold : 200
+});
