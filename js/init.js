@@ -63,7 +63,3 @@ $('.grid').isotope({
   itemSelector: '.grid-item',
   layoutMode: 'masonry',
 });
-
-$("img.lazy").lazyload({
-    threshold : 200
-});
